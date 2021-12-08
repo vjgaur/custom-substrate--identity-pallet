@@ -1,3 +1,32 @@
+## Designing a Custom Identity Pallet
+
+In this example we are trying to design an identity pallet, where: <br />
+Users could generate a new identity <br />
+Add/remove attributes to that identity <br />
+Delete the identity <br />
+
+## Storage Items <br />
+Identity map: Identity => AccountId <br />
+Attribute map: (Identity, Attribute_Key) => Attribute_Value <br />
+
+## Events <br />
+IdentityCreated(Identity, AccountId) <br />
+AttributeAdded(Identity, Attribute_Key, Attribute_Value) <br />
+AttributeRemoved(Identity, Attribute_Key), <br />
+
+## Errors <br />
+IdentityAlreadyClaimed <br />
+IdentityNotFound <br />
+NotAuthorized <br />
+AttributeNotFound <br />
+
+##Function Calls <br />
+create_identity( Identity ) <br />
+add_attribute( Identity, Attribute_Key, Attribute_Value ) <br />
+remove_attribute( Identity, Attribute_Key ) <br />
+
+
+
 > :information_source: This repository has been deprecated in favor of the [Substrate Node Template](https://github.com/substrate-developer-hub/substrate-node-template).
 > 
 > You can still create your own custom pallets in their own crate by extracting the [`/pallet/template/`](https://github.com/substrate-developer-hub/substrate-node-template/tree/master/pallets/template) folder of the `substrate-node-template` project.
