@@ -1,4 +1,4 @@
-## Designing a Custom Pallet
+## Designing a Custom Identity Pallet
 ```
 In this example we are trying to design an identity pallet, where:
 Users could generate a new identity
