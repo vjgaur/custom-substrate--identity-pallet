@@ -4,19 +4,23 @@ In this example we are trying to design an identity pallet, where:
 Users could generate a new identity
 Add/remove attributes to that identity
 Delete the identity
-Storage Items
+
+## Storage Items
 Identity map: Identity => AccountId
 Attribute map: (Identity, Attribute_Key) => Attribute_Value
-Events
+
+## Events
 IdentityCreated(Identity, AccountId)
 AttributeAdded(Identity, Attribute_Key, Attribute_Value)
 AttributeRemoved(Identity, Attribute_Key),
-Errors
+
+## Errors
 IdentityAlreadyClaimed
 IdentityNotFound
 NotAuthorized
 AttributeNotFound
-Function Calls
+
+##Function Calls
 create_identity( Identity )
 add_attribute( Identity, Attribute_Key, Attribute_Value )
 remove_attribute( Identity, Attribute_Key )
