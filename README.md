@@ -1,5 +1,5 @@
 ## Designing a Custom Identity Pallet
-```
+
 In this example we are trying to design an identity pallet, where:
 Users could generate a new identity
 Add/remove attributes to that identity
@@ -24,7 +24,7 @@ AttributeNotFound
 create_identity( Identity )
 add_attribute( Identity, Attribute_Key, Attribute_Value )
 remove_attribute( Identity, Attribute_Key )
-```
+
 
 
 > :information_source: This repository has been deprecated in favor of the [Substrate Node Template](https://github.com/substrate-developer-hub/substrate-node-template).
